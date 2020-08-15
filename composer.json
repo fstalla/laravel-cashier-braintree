@@ -18,12 +18,10 @@
     "require": {
         "braintree/braintree_php": "^4.0",
         "dompdf/dompdf": "^0.8.0",
-        "illuminate/contracts": "^6.0|^7.0",
         "illuminate/database": "^6.0|^7.0",
         "illuminate/http": "^6.0|^7.0",
         "illuminate/routing": "^6.0|^7.0",
-        "illuminate/support": "^6.0|^7.0",
-        "illuminate/view": "^6.0|^7.0",
+        "laravel/helpers": "^1.0",
         "nesbot/carbon": "^2.0",
         "php": "^7.2",
         "symfony/http-kernel": "~4.0"

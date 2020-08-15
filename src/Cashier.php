@@ -3,7 +3,7 @@
 namespace Laravel\Cashier;
 
 use Exception;
-use Illuminate\Support\Str;
+use Illuminate\Support\Str;  // Add laravel/helpers package
 
 class Cashier
 {

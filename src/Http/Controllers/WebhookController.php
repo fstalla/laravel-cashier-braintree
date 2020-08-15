@@ -3,7 +3,7 @@
 namespace Laravel\Cashier\Http\Controllers;
 
 use Exception;
-use Illuminate\Support\Str;
+use Illuminate\Support\Str;  //add laravel/helpers package
 use Illuminate\Http\Request;
 use Laravel\Cashier\Subscription;
 use Braintree\WebhookNotification;
