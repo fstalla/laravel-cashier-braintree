@@ -5,7 +5,7 @@ namespace Laravel\Cashier;
 use Exception;
 use Carbon\Carbon;
 use Braintree\Customer;
-use Illuminate\Support\Arr;
+use Illuminate\Support\Arr;  // Add laravel/helpers package
 use Braintree\PaymentMethod;
 use Braintree\PayPalAccount;
 use InvalidArgumentException;

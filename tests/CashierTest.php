@@ -2,7 +2,7 @@
 
 namespace Laravel\Cashier\Tests;
 
-use Braintree_Configuration;
+use Braintree\BraintreeConfiguration as Braintree_Configuration;
 use Carbon\Carbon;
 use Illuminate\Database\Capsule\Manager as DB;
 use Illuminate\Database\ConnectionInterface;
@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
+use Illuminate\Support\Str; // Add laravel/helpers package
 use Laravel\Cashier\Tests\Fixtures\Http\Controllers\CashierTestController;
 use Laravel\Cashier\Tests\Fixtures\User;
 
