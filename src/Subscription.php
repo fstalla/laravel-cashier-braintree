@@ -49,7 +49,7 @@ class Subscription extends Model
      */
     public function owner()
     {
-        $model = getenv('BRAINTREE_MODEL') ?: config('services.braintree.model', 'App\\User');
+        $model = config('services.braintree.model');
 
         $model = new $model;
 

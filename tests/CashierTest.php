@@ -2,7 +2,7 @@
 
 namespace Laravel\Cashier\Tests;
 
-use Braintree\BraintreeConfiguration as Braintree_Configuration;
+use Braintree\Configuration as Braintree_Configuration;
 use Carbon\Carbon;
 use Illuminate\Database\Capsule\Manager as DB;
 use Illuminate\Database\ConnectionInterface;
@@ -21,9 +21,9 @@ class CashierTest extends TestCase
         parent::setUp();
 
         Braintree_Configuration::environment('sandbox');
-        Braintree_Configuration::merchantId(getenv('BRAINTREE_MERCHANT_ID'));
-        Braintree_Configuration::publicKey(getenv('BRAINTREE_PUBLIC_KEY'));
-        Braintree_Configuration::privateKey(getenv('BRAINTREE_PRIVATE_KEY'));
+        Braintree_Configuration::merchantId(config('services.braintree.merchant_id'));
+        Braintree_Configuration::publicKey(config('services.braintree.public_key'));
+        Braintree_Configuration::privateKey(config('services.braintree.private_key'));
 
         Eloquent::unguard();
 
